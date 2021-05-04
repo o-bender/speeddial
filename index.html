@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Seed Dial</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <ul class="tiles-list">
+            <div class="tile-add"></div>
+        </ul>
+
+        <template id="modal-window">
+            <div class="overlay">
+                <div class="popup-window">
+                    <h1>Add a site</h1>
+                    <div class="close-window"></div>
+                    <form>
+                        <input type="text" autocomplete="off" autocapitalize="off"
+                               spellcheck="false" required autofocus="" placeholder="domain.com"
+                               name="url"
+                        >
+                        <input type="text" autocomplete="off" autocapitalize="off"
+                               spellcheck="false" placeholder="Name"
+                               name="name"
+                        >
+                        <button class="popup-window__add-btn" type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </template>
+
+        <template id="tile">
+            <div class="tile-wrapper">
+                <a class="tile" draggable="true">
+                    <span class="tile-remove-btn"></span>
+                    <p class="tile-name"></p>
+                    <p class="tile-url"></p>
+                    <span class="tile-logo"></span>
+                </a>
+            </div>
+        </template>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,166 @@
+body {
+    background-image: url(images/mishal-ibrahim-616127-unsplash.jpeg);
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+.tiles-list {
+    list-style: none;
+}
+
+.tile-wrapper {
+
+}
+.tile {
+    position: relative;
+    padding: 6px 8px 8px 8px;
+    float: left;
+    width: 150px;
+    height: 84px;
+    margin: 12px;
+    background-color: transparent;
+    box-shadow: 0 10px 20px -8px rgb(0 0 0 / 30%);
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.tile-remove-btn {
+    position: relative;
+    float: right;
+    /*display: none;*/
+    width: 18px;
+    height: 18px;
+    background-image: url(images/icon-tile-remove.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    z-index: 10;
+}
+.tile-name {
+    font-size: 1.05rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 85%;
+}
+.tile-url {
+    font-size: 0.75rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 3px;
+    opacity: 0.7;
+}
+.tile-logo {
+    position: relative;
+    top: 100%;
+    transform: translateY(-240%);
+    float: right;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+}
+.tile-add {
+    position: relative;
+    display: inline-block;
+    width: 151px;
+    height: 84px;
+    margin: 12px;
+    background-image: url(images/icon-tile-add.svg);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: solid 1px #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000000;
+}
+
+.popup-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -128px;
+    margin-left: -210px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 420px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.popup-window h1 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #212121;
+}
+.popup-window .close-window {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(images/icon-overlay-popup-window-close.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    cursor: pointer;
+}
+.popup-window input[type=text] {
+    display: block;
+    margin-bottom: 15px;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    background-color: #EEEEEE;
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #212121;
+}
+
+.popup-window button {
+    float: right;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #2979FF;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
